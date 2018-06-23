@@ -1,0 +1,41 @@
+import turtle
+
+turtle.penup()
+turtle.setx(110)
+turtle.sety(1)
+turtle.pendown()
+def draw_square():
+    window=turtle.Screen()
+    window.bgcolor("red")
+    brad=turtle.Turtle()
+    brad.shape("turtle")
+    brad.color("white")
+    brad.speed(9)
+
+    brad.forward(50)
+    brad.right(90)
+    brad.forward(50)
+    brad.right(90)
+    brad.forward(50)
+    brad.right(90)
+    brad.forward(50)
+    brad.right(90)
+    i=1
+    while i<72:
+        brad.right(5)
+        
+        brad.forward(50)
+        brad.right(90)
+        brad.forward(50)
+        brad.right(90)
+        brad.forward(50)
+        brad.right(90)
+        brad.forward(50)
+        brad.right(90)
+
+        i=i+1
+    brad.right(95)
+    brad.forward(200)
+    window.exitonclick()
+
+draw_square()
